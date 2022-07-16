@@ -1,0 +1,9 @@
+<ul class="list-group mx-auto my-3 col-5">
+    <li
+      class="list-group-item"
+      *ngFor="let pessoa of pessoas"
+      appMarcaTexto corDeFundo="black" corDoTexto="yellow"
+    >
+    O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }} e sua idade é {{ pessoa.age}}
+    </li>
+  </ul>
