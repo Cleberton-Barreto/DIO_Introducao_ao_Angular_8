@@ -1,4 +1,11 @@
 <router-outlet></router-outlet>
+<div class="colapse navbar-colapse">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a routerLink="/data-binding" class="nav-link">Data Bidint</a>
+    </li>
+  </ul>
+</div>
 
 <h1 appMarcaTexto corDeFundo="black" corDoTexto="yellow" class="text-center">Olá mundo!</h1>
 
@@ -10,6 +17,8 @@
 
   <h2 class="text-center">Contador: {{ count }}</h2>
 </div>
+
+<app-button btnText="Contar" btnType="btn-primary" ></app-button>
 
 <!-- Diretiva de estrutura -->
 
@@ -52,3 +61,5 @@
       >
     <h4 appMarcaTexto corDeFundo="black" corDoTexto="yellow" >Saída: {{text}}</h4>
 </div>
+
+

@@ -1,0 +1,36 @@
+<div class="card w-100 my-5">
+    <div class="card-body">
+        <h1 class="card-title text-center">Lista de Usuários</h1>
+        <button class="btn btn-success mb-4 float-end" routerLink="/form">Cadastrar Novo</button>
+        <table class="table">
+            <thead><!--table head-->
+                <tr><!--table row(linha)-->
+                    <th>Id</th><!--table na horizontal se fosse coluna usar o tr(table row)-->
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                    <th colspan="2"></th><!--Este th é para ocupar as últimas 2 colunas, pois teremos botões-->
+                </tr>
+            </thead>
+            <tbody><!--table body-->
+                <tr *ngFor="let user of users">
+                    <td>{{user.Id}}</td>
+                    <td>{{user.Nome}}</td>
+                    <td>{{user.Sobrenome}}</td>
+                    <td>{{user.Idade}}</td>
+                    <td>{{user.Profissao}}</td>
+                    <td>
+                       <button class="btn btn-primary" [routerLink]="['/form', user.Id]">Editar</button> 
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" (click)="deleteUser(user.Id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

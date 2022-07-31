@@ -105,3 +105,54 @@
 
 ![alt text](/c:/Documents/DIO_BootCamp2022/DIO_Introducao_ao_Angular_8/img/http.png)
 
+
+
+### Angular Data Biding
+
+![alt text](/c:/Documents/DIO_BootCamp2022/DIO_Introducao_ao_Angular_8/img/dt.png)
+
+
+
+- **Interpolação:**{{valor}} associa informação do componente para o template(HTML)
+- **Property Binding:**[propriedade]="valor" associa informação do componente para o template(HTML)
+- **Event Binding:**(evento)="handler" associa informação do template(HTML)para o componente
+- **Two-Way Data Binding:**[(ngModel)]="propriedade" associa informação entre ambos, ou seja, mantém ambos atualizados(componente e template(HTML).
+
+
+
+
+
+### Ciclo de vida do Angular
+
+* **ngOnChanges**: Uma vez na criação do componente e sempre que houver alteração em uma de suas propriedades de entrada.
+* **ngOnInit**: Uma única vez quando o componente é inicializado.
+* **ngDoCheck**: A cada ciclo de detecção de alterações (use para alterações que o Angular não detecta).
+* **ngAfterContentInit**: Depois que conteúdo externo é inserido no componente. Por exemplo, vindo do < ng-content >.
+* **ngAfterContentChecked**: Após a verificação do conteúdo externo.
+* **ngAfterViewInit**: Logo após o conteúdo do próprio componente e de seus filhos ser inicializado.
+* **ngAfterViewChecked**: Cada vez que o conteúdo é verificado pelo mecanismo de detecção de alterações do Angular.
+* **ngOnDestroy**: Antes do angular destruir o componente.
+
+***OBS: Lembre sempre de implementar a interface dos ganchos em uso***
+
+
+
+### Componentes
+
+​	Os Componentes são blocos que sozinhos tem um sentido, eles podem ser únicos, ou um conjunto de vários outros componentes.
+
+​	Quando nos utilizamos da componentização, temos bastante ganhos, dos quais podemos citar: ***a reutilização de trechos de código; isolamento de contexto; legibilidade do código; redução de código e a padronização do projeto.***
+
+![alt text](/c:/Documents/DIO_BootCamp2022/DIO_Introducao_ao_Angular_8/img/componente7.png)
+
+
+
+### Componentes Angular
+
+* **Metadata:** são definições que iremos informar ao Angular que a nossa classe é um Component, por meio de decorators, nesse caso @Component
+* **Classe:** assim como em qualquer linguagem de programação que utiliza o paradigma da orientação a objeto, possui suas propriedades e métodos
+
+![alt text](/c:/Documents/DIO_BootCamp2022/DIO_Introducao_ao_Angular_8/img/componente8.png)
+
+
+

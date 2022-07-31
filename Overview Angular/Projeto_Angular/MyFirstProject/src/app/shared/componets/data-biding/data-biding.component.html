@@ -1,0 +1,25 @@
+<h1 [class.textRed]="textRed" >O meu nome é {{ retornaNome() }}</h1>
+
+<img [src]="imgUrl" [alt]="imgAlt">
+
+<!-- <input #input (keyup)="clicou(input.value)">
+
+{{ input.value }} -->
+
+<div>
+    <button (click)="clicou()" [attr.aria-label]="buttonText">{{ buttonText }}</button>
+</div>
+
+<!-- <input type="text" class="form-control" [(ngModel)]="inputText">
+<p class="text-default">{{ inputText }}</p>
+ -->
+
+
+
+<app-button btnText="Enviar" btnType="btn-primary"></app-button>
+<app-button btnText="Cancelar" btnType="btn-danger"></app-button>
+<app-button btnText="Salvar" btnType="btn-outline-success"></app-button>
+<app-button btnText="Teste" btnType="btn-default"></app-button>
+
+
+<app-life-cycles></app-life-cycles>
